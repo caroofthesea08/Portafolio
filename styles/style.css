@@ -1,0 +1,160 @@
+/* Importación de fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos para el cuerpo */
+body {
+    background-color: white;
+    color: #333;
+    text-align: center;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center; /* Centra los elementos en la barra */
+    align-items: center;
+    background-color: rgb(172, 212, 238);
+    padding: 15px 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+ul,
+.cta-btns,
+.menu-items {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+/* ---- MAIN CONTENT ---- */
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    max-width: 1200px;
+    margin: 120px auto 50px;
+    padding: 20px;
+}
+
+/* ---- TEXT SIDE ---- */
+#text-side {
+    width: 50%;
+}
+
+#text-side h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+#text-side p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+#text-side button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#text-side button:hover {
+    background-color: #0056b3;
+}
+
+/* ---- IMAGE SIDE ---- */
+#img-side {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.desktop-img {
+    width: 100%;
+    max-width: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.mobile-img {
+    display: none; /* Hide mobile image by default */
+}
+
+/* ---- FOOTER ---- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* ---- RESPONSIVE DESIGN (Mobile) ---- */
+@media (max-width: 368px) {
+    main {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .desktop-img {
+        display: none; /* Hide desktop image on mobile */
+    }
+
+    .mobile-img {
+        display: block; /* Show mobile image */
+        width: 100%;
+        max-width: 400px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .menu-items {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
