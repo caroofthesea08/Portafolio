@@ -30,6 +30,20 @@ nav {
     z-index: 1000;
 }
 
+main {
+    background-image: url('./hand-painted-watercolor-pastel-sky-background_52683-60691.avif'); /* Replace with your actual image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
 ul,
 .cta-btns,
 .menu-items {
@@ -156,5 +170,28 @@ footer {
     .menu-items {
         flex-direction: column;
         gap: 10px;
+    }
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 168px) {
+    main {
+        flex-direction: column-reverse; /* Moves text above the image */
+        height: auto;
+        padding: 20px;
+    }
+
+    #text-side {
+        order: -1; /* Moves text to the top */
+        margin-bottom: 20px;
+    }
+
+    #img-side img {
+        width: 100%; /* Make image responsive */
+    }
+
+    .menu-items {
+        flex-direction: column; /* Stack menu items */
+        text-align: center;
     }
 }
