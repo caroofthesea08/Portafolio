@@ -20,9 +20,11 @@ nav {
 }
 
 .logo img {
-    width: 3vw; 
+    align-self: center;
+    width: 4vw; 
     height: auto;
-    margin-right: 1vw;
+    margin-right: 1px;
+    margin-left: 10px;;
 }
 
 nav ul {
@@ -68,8 +70,6 @@ nav ul li a:hover {
     color: #EDE8DC;
 }
 
-
-/* ---- MAIN CONTENT ---- */
 main {
     display: flex;
     flex-direction: row;
@@ -81,7 +81,6 @@ main {
     padding: 20px;
 }
 
-/* ---- TEXT SIDE ---- */
 #text-side {
     width: 50%;
 }
@@ -150,53 +149,31 @@ footer {
     margin: 0;
 }
 
-/* ---- RESPONSIVE DESIGN (Mobile) ---- */
-@media (max-width: 368px) {
+/* 🔹 Make layout stack vertically on small screens */
+@media (max-width: 768px) {
     main {
+        display: flex;
         flex-direction: column;
-        text-align: center;
-        margin-top: 100px;
-    }
-
-    .desktop-img {
-        display: none; /* Hide desktop image on mobile */
-    }
-
-    .mobile-img {
-        display: block; /* Show mobile image */
-        width: 100%;
-        max-width: 400px;
-    }
-
-    nav {
-        flex-direction: column;
-    }
-
-    .menu-items {
-        flex-direction: column;
-        gap: 10px;
-    }
-}
-
-/* RESPONSIVE DESIGN */
-@media (max-width: 200px) {
-    main {
-        flex-direction: column-reverse;
+        align-items: center;
         height: auto;
         padding: 20px;
     }
 
     #text-side {
-        order: -1;
-        margin-bottom: 20px;
-    }
-
-    #img-side img {
-        width: 100%;
-    }
-
-    .menu-items {
-        flex-direction: column;
+        order: -1; 
         text-align: center;
     }
+
+    #img-side {
+        display: none;
+    }
+
+    .mobile-img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        display: block;
+        margin-top: 20px;
+    }
 }
+
