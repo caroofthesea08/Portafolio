@@ -26,22 +26,28 @@
   <body>
     <header>
         <nav>
+            <h2 class="logo"><img src="./Imagen1.png">arolina's Path</h2>
             <ul class="menu-items">
-                <li><a href="./about.html">About Me</a></li>
-                <li><a href="./projects.html">Projects</a></li>
-                <li><a href="./hobbies.html">Hobbies</a></li>
-                <li><a href="./contact.html">Contact Me</a></li>
+                <li><a href=#about>About</a></li>
+                <li><a href=#projects>Projects</a></li>
+                <li><a href=#hobbies>Hobbies</a></li>
+                <li><a href=#contact>Contact</a></li>
             </ul>
         </nav>        
     </header>
     <main>
+      <img
+      class="mobile-img"
+      src="./Yoo.jpg"
+      />
         <section id="text-side">
-          <h1>Conoce <br />a Carolina</h1>
+          <h1>Meet<br /> Carolina del Mar</h1>
           <p class="parrafo1">
-            Una estudiante cartagenera que estudia ingeniería biotecnológica en la universidad EIA. 
+            A biotechnology engineering student from EIA University,
+             know her journey from Cartagena to Envigado.
           </p>
-          <a href="./about.html">
-            <button>Sobre mí</button>
+          <a href="#about">
+            <button>About</button>
           </a>
         </section>
         <section id="img-side">
@@ -49,15 +55,53 @@
             class="desktop-img"
             src="./Yoo.jpg"
           />
-          <img
-            class="mobile-img"
-            src="./IMG_0816.PNG"
-          />
         </section>
-      </main>
-       
-        <footer>
-            &copy; 2025 Carolina del Mar. All rights reserved.
-        </footer>
-    </body>
+
+    </main>
+
+      <section id="about">
+          <h2>About Me</h2>
+          <p>Hi, I'm Carolina del Mar! A passionate developer with experience in web technologies.</p>
+          <img src="images/profile.jpg" alt="Carolina del Mar" width="150px">
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Description of project 1.</p>
+            <p>Technologies: HTML, CSS, JS</p>
+            <a href="#">Live Demo</a> | <a href="#">GitHub Repo</a>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Description of project 2.</p>
+            <p>Technologies: React, Tailwind</p>
+            <a href="#">Live Demo</a> | <a href="#">GitHub Repo</a>
+        </div>
+      </section>
+
+      <section id="hobbies">
+        <h2>Hobbies</h2>
+        <p>I love coding, reading, and hiking!</p>
+        <img src="images/hobby.jpg" alt="Hiking">
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: carolina@example.com</p>
+        <p>GitHub: <a href="https://github.com/caroofthesea08" target="_blank">@caroofthesea08</a></p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+      </section>
+
+      <footer>
+        &copy; 2025 Carolina del Mar. All rights reserved.
+      </footer>
+  </body>
 </html>
+

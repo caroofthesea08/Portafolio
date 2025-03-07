@@ -6,45 +6,41 @@
     font-family: 'Poppins', sans-serif;
 }
 
-h1 {
-    text-align: center;
-    font-family: "DM Serif Text", sans-serif;
-    font-weight: 400;
-    color: blue;
-    font-style:inherit;
-}
-
-.parrafo1{
-    text-align: center;
-    font-family: "DM Serif Text", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: black;
-}
-
 nav {
     display: flex;
-    justify-content: center; /* Centra los elementos en la barra */
+    justify-content: space-between; 
     align-items: center;
-    background-color: rgb(187, 238, 248);
-    padding: 15px 30px;
+    flex-wrap: wrap;
+    background-color: #E7CCCC;
+    padding: 10.5px 0.1vw;
     position:fixed;
     width: 100%;
     top: 0;
     margin:0;
 }
 
-main {
-    background-image: url('./backgroundimg.png');
-    background-size: cover;  
-    background-position: center; 
-    background-attachment: fixed; 
-    background-repeat: no-repeat; 
-    height: 100vh; 
-    margin: 0;
-    padding: 0;
+.logo img {
+    width: 3vw; 
+    height: auto;
+    margin-right: 1vw;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    font-family: "DM Serif Text", serif;
+    font-size: 2vw;
+    white-space: nowrap;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    gap: 0.01vw;
+    padding: 0;
+    margin: 0;
+}
 
 ul,
 .cta-btns,
@@ -53,16 +49,17 @@ ul,
   align-items: center;
 }
 
-nav ul {
+li {
     list-style: none;
-    display: flex;
-    gap: 20px; /* Espacio entre los elementos */
-    padding: 0;
-    margin: 0;
 }
+
 
 nav ul li {
     display: inline-block;
+}
+
+body {
+    background-color: #EDE8DC;
 }
 
 nav ul li a {
@@ -70,14 +67,15 @@ nav ul li a {
     color:black;
     font-weight: 600;
     font-family: "DM Serif Text", serif;
-    font-size: 1rem;
+    font-size: 2vw;
     transition: color 0.3s ease-in-out;
-    padding: 10px 15px;
+    padding: 0px 50px;
 }
 
 nav ul li a:hover {
-    color: #007bff;
+    color: #EDE8DC;
 }
+
 
 /* ---- MAIN CONTENT ---- */
 main {
@@ -99,19 +97,29 @@ main {
 #text-side h1 {
     font-size: 2.5rem;
     font-weight: 700;
+    text-align: center;
+    font-family: "DM Serif Text", sans-serif;
+    font-size: 40px;
+    color: #8b9f71;
+    font-style:inherit;
 }
 
-#text-side p {
-    font-size: 1.2rem;
-    color: #555;
+#text-side parrafo1 {
     margin-top: 10px;
+    margin-right: 10px;
+    text-align: center;
+    font-family: "DM Serif Text", serif;
+    font-size: 20px;
+    font-style: normal;
+    color: black;
 }
 
 #text-side button {
-    background-color:blue;
-    color: white;
+    background-color:#C1CFA1;
     border: none;
-    font-size: 1rem;
+    font-weight: 400;
+    font-family: "DM Serif Text", serif;
+    font-size: 15px;
     padding: 10px 20px;
     border-radius: 5px;
     margin-top: 20px;
@@ -120,7 +128,7 @@ main {
 }
 
 #text-side button:hover {
-    background-color: #0056b3;
+    color: #EDE8DC;
 }
 
 /* ---- IMAGE SIDE ---- */
@@ -145,7 +153,7 @@ main {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
+    background-color: #E7CCCC;
     color: white;
     margin: 0;
 }
@@ -179,24 +187,24 @@ footer {
 }
 
 /* RESPONSIVE DESIGN */
-@media (max-width: 168px) {
+@media (max-width: 200px) {
     main {
-        flex-direction: column-reverse; /* Moves text above the image */
+        flex-direction: column-reverse;
         height: auto;
         padding: 20px;
     }
 
     #text-side {
-        order: -1; /* Moves text to the top */
+        order: -1;
         margin-bottom: 20px;
     }
 
     #img-side img {
-        width: 100%; /* Make image responsive */
+        width: 100%;
     }
 
     .menu-items {
-        flex-direction: column; /* Stack menu items */
+        flex-direction: column;
         text-align: center;
     }
 }
