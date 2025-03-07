@@ -25,14 +25,6 @@ nav {
     margin-right: 1vw;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    font-family: "DM Serif Text", serif;
-    font-size: 2vw;
-    white-space: nowrap;
-}
-
 nav ul {
     display: flex;
     flex-wrap: nowrap;
