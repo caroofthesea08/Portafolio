@@ -3,37 +3,35 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "DM Serif Text", serif;
+}
+
+body {
+    background-color: #FFFDEC;
 }
 
 nav {
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    flex-wrap: wrap;
-    background-color: #E7CCCC;
-    padding: 10.5px 0.1vw;
-    position:fixed;
+    background-color: #FFE2E2;
+    padding: 1.7rem 10%;
+    position: fixed;
     width: 100%;
     top: 0;
-    margin:0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 4%;
 }
 
 .logo img {
-    align-self: center;
-    width: 4vw; 
+    width: 3rem; 
     height: auto;
-    margin-right: 1px;
-    margin-left: 10px;;
-}
-
-nav ul {
-    display: flex;
-    flex-wrap: nowrap;
-    list-style: none;
-    gap: 0.01vw;
-    padding: 0;
-    margin: 0;
 }
 
 ul,
@@ -43,17 +41,21 @@ ul,
   align-items: center;
 }
 
-li {
+.menu-items {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.menu-items {
     list-style: none;
-}
-
-
-nav ul li {
-    display: inline-block;
-}
-
-body {
-    background-color: #EDE8DC;
+    display: flex;
+    gap:6vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li a {
@@ -61,13 +63,13 @@ nav ul li a {
     color:black;
     font-weight: 600;
     font-family: "DM Serif Text", serif;
-    font-size: 2vw;
+    font-size: 1.1rem;
     transition: color 0.3s ease-in-out;
-    padding: 0px 50px;
+    padding: 10px 15px;
 }
 
 nav ul li a:hover {
-    color: #EDE8DC;
+    color: #86A788;
 }
 
 main {
@@ -81,32 +83,32 @@ main {
     padding: 20px;
 }
 
-#text-side {
+.text-side {
     width: 50%;
 }
 
 #text-side h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 700;
     text-align: center;
     font-family: "DM Serif Text", sans-serif;
     font-size: 40px;
-    color: #8b9f71;
+    color: #86A788;
     font-style:inherit;
 }
 
-#text-side parrafo1 {
+#text-side p {
     margin-top: 10px;
     margin-right: 10px;
     text-align: center;
-    font-family: "DM Serif Text", serif;
+    font-family: "Tinos", serif;
     font-size: 20px;
     font-style: normal;
     color: black;
 }
 
 #text-side button {
-    background-color:#C1CFA1;
+    background-color:#86A788;
     border: none;
     font-weight: 400;
     font-family: "DM Serif Text", serif;
@@ -119,10 +121,10 @@ main {
 }
 
 #text-side button:hover {
-    color: #EDE8DC;
+    color: #FFE2E2;
 }
 
-/* ---- IMAGE SIDE ---- */
+/* IMAGE SIDE */
 #img-side {
     width: 50%;
     display: flex;
@@ -137,19 +139,19 @@ main {
 }
 
 .mobile-img {
-    display: none; /* Hide mobile image by default */
+    display: none; 
 }
 
-/* ---- FOOTER ---- */
+/* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #E7CCCC;
-    color: white;
+    background-color: #FFE2E2;
+    color: #86A788;
     margin: 0;
 }
 
-/* 🔹 Make layout stack vertically on small screens */
+/*Make layout stack vertically on small screens */
 @media (max-width: 768px) {
     main {
         display: flex;
@@ -176,4 +178,105 @@ footer {
         margin-top: 20px;
     }
 }
+
+
+/* CONTACT SECTION */
+#contact {
+    background-color: #FFE2E2; 
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 4px 8px black;
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+.contact-items {
+    background: #ffe9e9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+form label {
+    font-weight: bold;
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: "Tinos", serif;
+    transition: 0.3s;
+    background-color:#fffef5;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #8b9f71;
+    box-shadow: 0px 0px 5px rgba(180, 145, 168, 0.5);
+}
+
+form textarea {
+    height: 120px;
+    resize: none;
+    background-color: #fffef5;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-family: "Tinos", serif;
+}
+
+
+.send-btn {
+    background-color: #86A788;
+    color: white;
+}
+
+.send-btn:hover {
+    background-color: #4da152;
+}
+
+.delete-btn {
+    background-color: #ffa0a0;
+    color: white;
+    margin-left: 10px;
+}
+
+.delete-btn:hover {
+    background-color: #fc6969;
+}
+
+@media (max-width: 600px) {
+    #contact {
+        width: 90%;
+    }
+
+    form input,
+    form textarea {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+}
+
 

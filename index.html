@@ -1,67 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=DM+Serif+Text:ital@0;1&family=Noto+Sans+Warang+Citi&family=Pattaya&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=DM+Serif+Text:ital@0;1&family=Noto+Sans+Warang+Citi&family=Pattaya&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=DM+Serif+Text:ital@0;1&family=Noto+Sans+Warang+Citi&family=Pattaya&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./Imagen1.png"
-    />
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="./Imagen1.png" />
 
     <title>Carolina Gamez</title>
+</head>
+<body>
 
-  </head>
-  <body>
     <header>
         <nav>
-            <h2 class="logo"><img src="./Imagen1.png"></h2>
+            <h2 class="logo">
+                <img src="./Imagen1.png" alt="Logo">
+            </h2>
             <ul class="menu-items">
-                <li><a href=#about>About</a></li>
-                <li><a href=#projects>Projects</a></li>
-                <li><a href=#hobbies>Hobbies</a></li>
-                <li><a href=#contact>Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>        
     </header>
-      <main>
+
+    <main>
         <section id="text-side">
-          <h1>Meet<br /> Carolina del Mar</h1>
-          <p class="parrafo1">
-              A biotechnology engineering student from EIA University,
-              know her journey from Cartagena to Envigado.
-          </p>
-          <a href="#about">
-              <button>About</button>
-          </a>
+            <h1>Have you met<br /> Carolina?</h1>
+            <p class="parrafo1">
+                Is "Del Mar" your middle name or your last name? Why did you drop out of medical school?
+                Are you studying an engineering in bio...what? The answer to these and more questions right here.
+            </p>
+            <a href="#about">
+                <button>About</button>
+            </a>
         </section>
-  
+
         <section id="img-side">
-          <img class="desktop-img" src="./Yoo.jpg" />
+            <img class="desktop-img" src="./prince.png" />
         </section>
 
-        <img class="mobile-img" src="./Yoo.jpg" />
-      </main>
-  
+        <img class="mobile-img" src="./prince.png" />
+    </main>
 
-      <section id="about">
-          <h2>About Me</h2>
-          <p>Hi, I'm Carolina del Mar! A passionate developer with experience in web technologies.</p>
-          <img src="images/profile.jpg" alt="Carolina del Mar" width="150px">
-      </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Carolina del Mar! A passionate developer with experience in web technologies.</p>
+        <img src="images/profile.jpg" alt="Carolina del Mar" width="150px">
+    </section>
 
-      <section id="projects">
+    <section id="projects">
         <h2>Projects</h2>
         <div class="project">
             <h3>Project 1</h3>
@@ -75,29 +73,45 @@
             <p>Technologies: React, Tailwind</p>
             <a href="#">Live Demo</a> | <a href="#">GitHub Repo</a>
         </div>
-      </section>
+    </section>
 
-      <section id="hobbies">
+    <section id="hobbies">
         <h2>Hobbies</h2>
         <p>I love coding, reading, and hiking!</p>
         <img src="images/hobby.jpg" alt="Hiking">
-      </section>
+    </section>
 
-      <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: carolina@example.com</p>
-        <p>GitHub: <a href="https://github.com/caroofthesea08" target="_blank">@caroofthesea08</a></p>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-      </section>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      
+      <div class="contact-items">
+          <form>
+              <label for="nombre">Name:</label>
+              <input type="text" name="nombre" id="nombre" placeholder="Enter your name" required>
+  
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email" placeholder="Enter your email" required>
+  
+              <label for="comments">Comments:</label>
+              <textarea name="comments" id="comments" placeholder="Your Message" required></textarea>
+  
+              <div class="buttons">
+                  <button type="submit" class="send-btn">Send</button>
+                  <button type="reset" class="delete-btn">Delete</button>
+              </div>
+          </form>
+      </div>
+  
+      <p>Email: carolina.gamez@eia.edu.com</p>
+      <p>GitHub: <a href="https://github.com/caroofthesea08" target="_blank">@caroofthesea08</a></p>
+  </section>
+  
 
-      <footer>
+    <footer>
         &copy; 2025 Carolina del Mar. All rights reserved.
-      </footer>
-  </body>
+    </footer>
+
+</body>
 </html>
+
 
