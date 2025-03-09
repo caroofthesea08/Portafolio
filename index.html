@@ -8,10 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=DM+Serif+Text:ital@0;1&family=Noto+Sans+Warang+Citi&family=Pattaya&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=DM+Serif+Text:ital@0;1&family=Noto+Sans+Warang+Citi&family=Pattaya&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="style.css" />
     
     <link rel="icon" type="image/png" sizes="32x32" href="./Imagen1.png" />
@@ -39,7 +35,7 @@
             <h1>Have you met<br /> Carolina?</h1>
             <p class="parrafo1">
                 Is "Del Mar" your middle name or your last name? Why did you drop out of medical school?
-                Are you studying an engineering in bio...what? The answer to these and more questions right here.
+                Are you studying an engineering in bio...what? Read and get to know me.
             </p>
             <a href="#about">
                 <button>About</button>
@@ -53,59 +49,152 @@
         <img class="mobile-img" src="./prince.png" />
     </main>
 
+    <h1>About Me</h1>
     <section id="about">
-        <h2>About Me</h2>
-        <p>Hi, I'm Carolina del Mar! A passionate developer with experience in web technologies.</p>
-        <img src="images/profile.jpg" alt="Carolina del Mar" width="150px">
+      <section id="me">
+        <p class="mylife">
+          My name is Carolina del Mar Gamez Herazo, so yes, “Del Mar” is my middle name and despite what you may think, I 
+          really feel lucky for it, it is original and cute. I was born in Cartagena, my beautiful “ciudad amurallada”, land 
+          of beaches, champeta, history and a lot of culture. <br>
+          I studied my whole life at Colegio La Anunciación, where I learned the basics of my knowledge and I finished a 
+          technician at SENA in administrative assistance just before graduating in 2020. I started medicine at Universidad 
+          del Norte, but dropped out because although I really like science, part of me also liked numbers and math (yes, I'm 
+          crazy like that). A semester later, I started biotechnological engineering at EIA University, where I am now in my 
+          seventh semester. <br>
+          These last semesters I had the opportunity to find my favorite area of the career, so at the moment I am fully involved 
+          in the world of bioprocesses, including modeling, simulation and control. So, with a solid academic background, I hope to 
+          push the boundaries of scientific innovation through proper use of existing techniques and methodologies. <br>
+          My background includes participation in iGEM Design League, where I collaborated in the development of a solution for the 
+          control of Thumbergia alata using synthetic biology. I have actively participated in multiple research groups, such as bioprocess 
+          modeling, bioinformatics, genetic engineering and fermentation and applied bioprocesses. I have also taken courses in specialized 
+          areas of biotechnology and engineering such as design of experiments, bioprocess modeling and industrial process simulation. <br>
+          With each experience, I have strengthened my passion for biotechnology and its potential to drive meaningful change. Looking 
+          ahead, I am eager to continue expanding my expertise and my knowledge, and becoming a great person and professional.
+        </p>
+      </section>
+
+      <section id="myimage">
+        <img class="desktop-img2" src="./mee.jpg" />
+      </section>
+      <img class="mobile-img2" src="./mee.jpg" />
     </section>
 
+    <h1>Projects</h1>
     <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of project 1.</p>
-            <p>Technologies: HTML, CSS, JS</p>
-            <a href="#">Live Demo</a> | <a href="#">GitHub Repo</a>
-        </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of project 2.</p>
-            <p>Technologies: React, Tailwind</p>
-            <a href="#">Live Demo</a> | <a href="#">GitHub Repo</a>
-        </div>
+        <article class="card">
+            <img src="./winogradsky.png" class="card-img">
+            <div class="card-container">
+                <h2>Winogradsky column</h2>
+                <p class="card-paragraph">
+                  Winogradsky column simulates the microbes ecosystems found in fresh and seawater. This column differentiates 
+                  in three characteristic habitats: aerobic zone in the surface, microaerophilic zone in the middle, and anaerobic 
+                  zone in the bottom. So a winogradsky column was built in a plastic bottle and the results were studied.
+                </p>
+                <a href="./Columna informe.pdf" target="_blank">Learn more</a>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="./biofertilizer.png" class="card-img">
+            <div class="card-container">
+                <h2>Biofertilizer</h2>
+                <p class="card-paragraph">
+                    Nitrogen is essential for plants. Rhizobium bacteria can fixate this nutrient into the roots of legumes. 
+                    Taking this into account, rhizobium bacteria were isolated to formulate a biofertilizer, to improve the 
+                    growth of bean plants.
+                </p>
+                <a href="./Proyecto Biotecnología Ambiental 2024-2.pdf" target="_blank">Learn more</a>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="./Invasive.png" class="card-img">
+            <div class="card-container">
+                <h2>Control of invasive plant</h2>
+                <p class="card-paragraph">
+                    Black-eyed Susan vine, a climbing plant from east Africa, has propagated through all America becoming an 
+                    aggressive invasive species. A gene silencing strategy based on small interfering RNA (siRNA) is proposed 
+                    for the control of this invasive species.
+                </p>
+                <a href="./JOGLBackUp.pdf" target="_blank">Learn more</a>
+            </div>
+        </article>
     </section>
 
+    <h1>Hobbies</h1>
     <section id="hobbies">
-        <h2>Hobbies</h2>
-        <p>I love coding, reading, and hiking!</p>
-        <img src="images/hobby.jpg" alt="Hiking">
+        <article class="hobby">
+            <img src="./dance.jpg" class="hobby-img">
+            <div class="hobby-container">
+                <h2>Dancing</h2>
+                <p class="hobby-paragraph">
+                    Dance is my way of expressing joy and energy. Whether it's Latin rhythms or freestyle movements, 
+                    it allows me to stay active, relieve stress, and embrace my culture with creativity beyond the 
+                    structured world of science.
+                </p>
+            </div>
+        </article>
+
+        <article class="hobby">
+            <img src="./read.jpg" class="hobby-img">
+            <div class="hobby-container">
+                <h2>Reading</h2>
+                <p class="hobby-paragraph">
+                    Books open doors to new perspectives. From scientific literature to fiction, reading sharpens my 
+                    analytical skills and fuels my curiosity about the world. I could read "The little prince" one 
+                    thousand times and never get bored, as well as the Harry Potter saga.
+                </p>
+            </div>
+        </article>
+
+        <article class="hobby">
+            <img src="./travel.jpg" class="hobby-img">
+            <div class="hobby-container">
+                <h2>Traveling</h2>
+                <p class="hobby-paragraph">
+                    Exploring new cultures, landscapes, and cuisines inspires me. Traveling not only broadens my worldview 
+                    but also connects me with diverse scientific and cultural innovations, which opens my mind to new
+                    inventions and novelties in my career.
+                </p>
+            </div>
+        </article>
+        <article class="hobby">
+          <img src="./bake.jpg" class="hobby-img">
+          <div class="hobby-container">
+              <h2>Baking</h2>
+              <p class="hobby-paragraph">
+                Science meets art in the kitchen, just as science meets innovation in biotechnology. Baking has taught me 
+                patience, precision, and experimentation skills that surprisingly align with those I need to perform in 
+                bioprocessing.
+              </p>
+          </div>
+      </article>
     </section>
 
     <section id="contact">
-      <h2>Contact Me</h2>
-      
-      <div class="contact-items">
-          <form>
-              <label for="nombre">Name:</label>
-              <input type="text" name="nombre" id="nombre" placeholder="Enter your name" required>
-  
-              <label for="email">Email:</label>
-              <input type="email" name="email" id="email" placeholder="Enter your email" required>
-  
-              <label for="comments">Comments:</label>
-              <textarea name="comments" id="comments" placeholder="Your Message" required></textarea>
-  
-              <div class="buttons">
-                  <button type="submit" class="send-btn">Send</button>
-                  <button type="reset" class="delete-btn">Delete</button>
-              </div>
-          </form>
-      </div>
-  
-      <p>Email: carolina.gamez@eia.edu.com</p>
-      <p>GitHub: <a href="https://github.com/caroofthesea08" target="_blank">@caroofthesea08</a></p>
-  </section>
-  
+        <h1>Contact Me</h1>
+        
+        <div class="contact-items">
+            <form>
+                <label for="nombre">Name:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Enter your name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+
+                <label for="comments">Comments:</label>
+                <textarea name="comments" id="comments" placeholder="Your Message" required></textarea>
+
+                <div class="buttons">
+                    <button type="submit" class="send-btn">Send</button>
+                    <button type="reset" class="delete-btn">Delete</button>
+                </div>
+            </form>
+        </div>
+
+        <p>Email: carolina.gamez@eia.edu.com</p>
+        <p>GitHub: <a href="https://github.com/caroofthesea08" target="_blank">@caroofthesea08</a></p>
+    </section>
 
     <footer>
         &copy; 2025 Carolina del Mar. All rights reserved.
@@ -113,5 +202,3 @@
 
 </body>
 </html>
-
-

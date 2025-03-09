@@ -3,13 +3,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "DM Serif Text", serif;
+    font-family: "Tinos", serif;
 }
 
 body {
-    background-color: #FFFDEC;
+    background-color: #EDE8DC;
 }
 
+h1{
+    text-align: center;
+    color: #86A788;;
+}
+
+/* ENCABEZADO */
 nav {
     display: flex;
     justify-content: space-between; 
@@ -26,7 +32,7 @@ nav {
     display: flex;
     align-items: center;
     position: absolute;
-    left: 4%;
+    left: 1vw;
 }
 
 .logo img {
@@ -72,6 +78,7 @@ nav ul li a:hover {
     color: #86A788;
 }
 
+/* MAIN */
 main {
     display: flex;
     flex-direction: row;
@@ -101,7 +108,6 @@ main {
     margin-top: 10px;
     margin-right: 10px;
     text-align: center;
-    font-family: "Tinos", serif;
     font-size: 20px;
     font-style: normal;
     color: black;
@@ -124,7 +130,6 @@ main {
     color: #FFE2E2;
 }
 
-/* IMAGE SIDE */
 #img-side {
     width: 50%;
     display: flex;
@@ -142,16 +147,7 @@ main {
     display: none; 
 }
 
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #FFE2E2;
-    color: #86A788;
-    margin: 0;
-}
-
-/*Make layout stack vertically on small screens */
+/* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
     main {
         display: flex;
@@ -179,10 +175,198 @@ footer {
     }
 }
 
+/* ABOUT ME */
+#about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+#me {
+    width: 70%;
+}
+
+#me p {
+    margin-top: 5px;
+    margin-right: 10px;
+    text-align:left;
+    padding: 20px;
+    font-size: 20px;
+    font-style: normal;
+    color: black;
+}
+
+#myimage {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.desktop-img2 {
+    width: 100%;
+    max-width: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.mobile-img2 {
+    display: none; 
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    #about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 20px;    
+    }
+
+    #me {
+        order: -1; 
+        text-align: left;
+        width: 100%;
+    }
+
+    #myimage {
+        display: none;
+    }
+
+    .mobile-img2 {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        display: block;
+        margin-top: 20px;
+    }
+}
+
+/* PROJECTS SECTION */
+#projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    max-width: 100%; 
+    background-color: #E7CCCC;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.02); /
+}
+
+.card-img {
+    border-radius: 1rem 1rem 0 0;
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+    display: block;
+}
+
+.card-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-container h2 {
+    color: #86A788;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    #projects {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 600px) {
+    #projects {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+}
+
+/* HOBBIES SECTION */
+#hobbies {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hobby {
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    width: 100%; 
+    background-color: #E7CCCC;
+    transition: transform 0.3s ease-in-out;
+    padding: 10px;
+}
+
+.hobby:hover {
+    transform: scale(1.02);
+}
+
+.hobby-img {
+    border-radius: 16px;
+    width: 47%; 
+    height: 300px; 
+    object-fit: cover; 
+}
+
+.hobby-container {
+    width: 50%; 
+    text-align: center;
+    padding: 10px;
+}
+
+.hobby-container h2 {
+    color: #86A788;
+}
+
+.hobby-container p {
+    font-family: "Tinos", serif;
+    font-size: 1rem;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    #hobbies {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+    .hobby {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .hobby-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .hobby-container {
+        width: 100%;
+    }
+}
 
 /* CONTACT SECTION */
 #contact {
-    background-color: #FFE2E2; 
+    background-color: #E7CCCC; 
     padding: 40px 20px;
     text-align: center;
     border-radius: 10px;
@@ -192,7 +376,7 @@ footer {
 }
 
 .contact-items {
-    background: #ffe9e9;
+    background: #edd9d9;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -244,7 +428,6 @@ button {
     font-family: "Tinos", serif;
 }
 
-
 .send-btn {
     background-color: #86A788;
     color: white;
@@ -264,6 +447,7 @@ button {
     background-color: #fc6969;
 }
 
+/* RESPONSIVE DESIGN */
 @media (max-width: 600px) {
     #contact {
         width: 90%;
@@ -279,4 +463,11 @@ button {
     }
 }
 
-
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #FFE2E2;
+    color: #86A788;
+    margin: 0;
+}
