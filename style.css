@@ -78,6 +78,17 @@ nav ul li a:hover {
     color: #86A788;
 }
 
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .logo {
+        display: none;
+    }
+
+    .menu-items {
+        gap: 2vw;
+    }
+}
+
 /* MAIN */
 main {
     display: flex;
